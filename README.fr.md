@@ -8,6 +8,7 @@ Un plugin TiddlyWiki qui fournit la palette de couleurs de nikorion : copie de l
 
 - `src/palette/palette.tid` : la palette `$:/palettes/nikorion`.
 - `src/palette/select.tid` : `$:/palette`, qui pointe vers elle.
+- `src/palette/styles/properties.tid` : variables CSS `--tpc-<clé>` des clés que le cœur n'émet pas (les `nk-…` propres).
 - `src/palette/theme-select.tid` : `$:/theme`, qui sélectionne le plugin compagnon TW-Theme (Vanilla si celui-ci n'est pas chargé).
 
 ## Installation
