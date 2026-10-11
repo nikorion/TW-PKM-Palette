@@ -1,8 +1,9 @@
 created: 20261011220000000
 creator: nikorion
-modified: 20261011220000000
+modified: 20261011173458000
 modifier: nikorion
 title: $:/DefaultTiddlers
 type: text/vnd.tiddlywiki
 
-[[Edits here become the palette]] [[Playground]]
+$:/plugins/nikorion/palette
+[[Edits here become the palette]is[tiddler]] [[Playground]is[tiddler]]

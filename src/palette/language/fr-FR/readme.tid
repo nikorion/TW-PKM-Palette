@@ -10,7 +10,7 @@ La palette de couleurs de nikorion, basée sur la palette par défaut (Vanilla) 
 
 ! Usage avec le plugin Theme
 
-En plus des clés standard, la palette porte les couleurs du plugin [[Theme|https://github.com/nikorion/TW-Theme]] (`nk-site-title`, `nk-hljs-*`, `nk-info-*`…). Le thème lit chaque clé comme variable CSS `--tpc-<clé>` : il ne contient aucune couleur en dur, changez une valeur ici et le thème suit. Les autres thèmes utilisent les clés standard via `<<colour nom>>`.
+En plus des clés standard, la palette porte les couleurs du plugin [[Theme|https://github.com/nikorion/TW-PKM-Theme]] (`nk-site-title`, `nk-hljs-*`, `nk-info-*`…). Le thème lit chaque clé comme variable CSS `--tpc-<clé>` : il ne contient aucune couleur en dur, changez une valeur ici et le thème suit. Les autres thèmes utilisent les clés standard via `<<colour nom>>`.
 
 ! Prérequis
 

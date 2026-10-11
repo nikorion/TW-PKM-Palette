@@ -1,15 +1,15 @@
-# TW-Palette
+# TW-PKM-Palette
 
 [English](README.md) · **Français**
 
-Un plugin TiddlyWiki qui fournit la palette de couleurs de nikorion : copie de la palette Vanilla par défaut à ajuster, sélectionnée par défaut. Compagnon de TW-Theme.
+Un plugin TiddlyWiki qui fournit la palette de couleurs de nikorion : copie de la palette Vanilla par défaut à ajuster, sélectionnée par défaut. Compagnon de TW-PKM-Theme.
 
 ## Vue d'ensemble
 
 - `src/palette/palette.tid` : la palette `$:/palettes/nikorion`.
 - `src/palette/select.tid` : `$:/palette`, qui pointe vers elle.
 - `src/palette/styles/properties.tid` : variables CSS `--tpc-<clé>` des clés que le cœur n'émet pas (les `nk-…` propres).
-- `src/palette/theme-select.tid` : `$:/theme`, qui sélectionne le plugin compagnon TW-Theme (Vanilla si celui-ci n'est pas chargé).
+- `src/palette/theme-select.tid` : `$:/theme`, qui sélectionne le plugin compagnon TW-PKM-Theme (Vanilla si celui-ci n'est pas chargé).
 
 ## Installation
 
@@ -20,7 +20,7 @@ Plugin personnel, non publié. Reliez `src/palette` comme `nikorion/palette` dan
 ```
 pnpm install
 pnpm dev      # wiki de dev + rechargement à chaud ; les modifications faites dans le navigateur sont réécrites dans src/palette
-pnpm build    # dist/TW-Palette-Plugin.json + docs/
+pnpm build    # dist/TW-PKM-Palette-Plugin.json + docs/
 ```
 
 ## Licence

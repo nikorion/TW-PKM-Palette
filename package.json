@@ -17,7 +17,7 @@
     "writeBack": {
       "dirs": [
         "src/palette",
-        "../TW-Theme/src/theme"
+        "../TW-PKM-Theme/src/pkm-theme"
       ],
       "default": "src/palette",
       "createNew": false

@@ -10,7 +10,7 @@ nikorion's colour palette, based on TiddlyWiki's default (Vanilla) palette. It i
 
 ! Use with the Theme plugin
 
-Beyond the standard keys, the palette carries the colours of the [[Theme|https://github.com/nikorion/TW-Theme]] plugin (`nk-site-title`, `nk-hljs-*`, `nk-info-*`…). The theme reads every key as a CSS variable `--tpc-<key>`, so it hard-codes no colour: change a value here and the theme follows. Other themes use the standard keys through `<<colour name>>`.
+Beyond the standard keys, the palette carries the colours of the [[Theme|https://github.com/nikorion/TW-PKM-Theme]] plugin (`nk-site-title`, `nk-hljs-*`, `nk-info-*`…). The theme reads every key as a CSS variable `--tpc-<key>`, so it hard-codes no colour: change a value here and the theme follows. Other themes use the standard keys through `<<colour name>>`.
 
 ! Requirements
 
