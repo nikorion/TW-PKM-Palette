@@ -147,7 +147,8 @@ wikilist-toolbar-background: #d3d3d3
 wikilist-toolbar-foreground: #888888
 wikilist-droplink-dragover: #ffc0c0
 wikilist-button-background: #acacac
-wikilist-button-foreground: #000000nk-background: #FAFAFA
+wikilist-button-foreground: #000000
+nk-background: #FAFAFA
 nk-site-title: #00DDFF
 nk-site-title-shadow: #000000
 nk-hljs-foreground: #e0e2e4
