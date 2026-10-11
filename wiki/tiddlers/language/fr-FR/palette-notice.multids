@@ -1,0 +1,5 @@
+title: $:/nikorion/language/fr-FR/PaletteNotice/
+
+Title: ! Tout ce que vous modifiez ici devient la palette
+Rule: ''Dans ce wiki de dev, tout ce que vous changez depuis l'interface web est écrit dans le plugin.'' Modifiez `$:/palettes/nikorion` (Panneau de contrôle → Apparence → Palette, ou le tiddler lui-même) : le changement est copié dans `src/palette/palette.tid` et le fichier enregistré est supprimé de `wiki/tiddlers/`. Ne fonctionne que pendant `pnpm dev` ; les brouillons et l'état de session ne sont jamais pris.
+Manual: ''Créer un fichier à la main dans `wiki/tiddlers/` pendant que `pnpm dev` tourne le ferait avaler par le plugin.'' Créez le contenu du wiki avant de lancer `pnpm dev`, ou arrêtez le serveur le temps de le faire.

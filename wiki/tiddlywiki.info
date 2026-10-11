@@ -1,0 +1,72 @@
+{
+    "description": "TW-Palette development wiki",
+    "plugins": [
+        "tiddlywiki/filesystem",
+        "tiddlywiki/tiddlyweb",
+        "nikorion/palette",
+        "tiddlywiki/highlight",
+        "tiddlywiki/katex",
+        "nikorion/plugin-info-tree",
+        "nikorion/scroll-layout",
+        "nikorion/math",
+        "nikorion/font-manager",
+        "nikorion/detect-language"
+    ],
+    "themes": [
+        "tiddlywiki/vanilla"
+    ],
+    "languages": [
+        "fr-FR"
+    ],
+    "config": {
+        "retain-original-tiddler-path": true
+    },
+    "build": {
+        "plugin-json": [
+            "--output",
+            "dist",
+            "--render",
+            "$:/core/templates/exporters/JsonFile",
+            "TW-Palette-Plugin.json",
+            "text/plain",
+            "",
+            "exportFilter",
+            "[[$:/plugins/nikorion/palette]]"
+        ],
+        "demo": [
+            "--output",
+            "docs",
+            "--render",
+            "$:/core/templates/exporters/JsonFile",
+            "TW-Palette-Plugin.json",
+            "text/plain",
+            "",
+            "exportFilter",
+            "[[$:/plugins/nikorion/palette]]",
+            "--savetiddlers",
+            "[!is[system]] :filter[get[type]prefix[image/]] -[get[type]match[image/svg+xml]]",
+            "images",
+            "--setfield",
+            "[!is[system]] :filter[get[type]prefix[image/]] -[get[type]match[image/svg+xml]]",
+            "_canonical_uri",
+            "$:/core/templates/canonical-uri-external-image",
+            "text/plain",
+            "--setfield",
+            "[!is[system]] :filter[get[type]prefix[image/]] -[get[type]match[image/svg+xml]]",
+            "text",
+            "",
+            "text/plain",
+            "--rendertiddler",
+            "$:/core/save/offline-external-js",
+            "index.html",
+            "text/plain",
+            "",
+            "publishFilter",
+            "-[[$:/config/SyncFilter]] -[[$:/config/FileSystemPaths]] -[[$:/config/OriginalTiddlerPaths]] -[[$:/plugins/kookma/commander]] -[[$:/plugins/oeyoews/tiddlywiki-codemirror-6]] -[[$:/plugins/wikilabs/link-to-tabs]]",
+            "--render",
+            "$:/core/templates/tiddlywiki5.js",
+            "[[tiddlywikicore-]addsuffix<version>addsuffix[.js]]",
+            "text/plain"
+        ]
+    }
+}

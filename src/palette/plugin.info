@@ -1,0 +1,12 @@
+{
+  "title": "$:/plugins/nikorion/palette",
+  "name": "Palette",
+  "description": "nikorion's colour palette, based on the default Vanilla palette, selected by default",
+  "author": "nikorion",
+  "version": "0.1.0",
+  "core-version": ">=5.3.5",
+  "list": "readme license history",
+  "source": "https://github.com/nikorion/TW-Palette",
+  "type": "application/json",
+  "plugin-type": "plugin"
+}

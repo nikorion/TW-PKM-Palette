@@ -1,0 +1,17 @@
+title: $:/plugins/nikorion/palette/language/en-GB/readme
+type: text/vnd.tiddlywiki
+
+nikorion's colour palette, based on TiddlyWiki's default (Vanilla) palette. It is selected by default: the plugin ships `$:/palette` pointing to it.
+
+! What it provides
+
+* `$:/palettes/nikorion`: the palette, a copy of the default one to adjust colour by colour (//Control Panel → Appearance → Palette//, or edit the tiddler).
+* `$:/palette`: selects it.
+
+! Use with the Theme plugin
+
+Palette colours are consumed by every theme through `<<colour name>>`. The [[Theme|https://github.com/nikorion/TW-Theme]] plugin uses them without hard-coding any colour.
+
+! Requirements
+
+TiddlyWiki >= 5.3.5.
