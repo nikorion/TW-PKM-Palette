@@ -1,5 +1,7 @@
 # TW-Palette — contexte projet pour Claude
 
+> **OBSOLÈTE (2026-10-11) : fusionné dans `TW-Theme`** (`palette.tid`, `palette-select.tid`, `styles/properties.tid`). Ce dossier n'est plus chargé par aucun wiki ; il peut être supprimé par l'utilisateur. Ne pas y travailler.
+
 > **Avant toute tâche sur ce plugin, consulter d'abord le `CLAUDE.md` du workspace** (`../CLAUDE.md`) et ses `guides/`. Ci-dessous : uniquement le spécifique à TW-Palette.
 
 ## Ce que c'est
