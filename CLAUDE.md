@@ -7,7 +7,7 @@ Plugin TiddlyWiki (`$:/plugins/nikorion/palette`, créé 2026-10-11) : la palett
 
 ## Décisions à ne pas défaire
 - `select.tid` livre `$:/palette` : un vrai `$:/palette` dans un wiki le masque (kms-prod, wikis de dev).
-- **Write-back navigateur → source** (`"twDev": {"writeBack": "src/palette"}`, `tw-dev/writeback.cjs`) : dans ce wiki de dev, ce qui est modifié dans l'UI est réécrit dans `src/palette/` puis supprimé de `wiki/tiddlers/` ; ne **pas** créer de fichier à la main dans `wiki/tiddlers/` pendant `pnpm dev`. Le wiki de TW-Theme route aussi les modifications de `$:/palettes/nikorion` ici (`writeBack.dirs`).
+- **Write-back navigateur → source** (`"twDev": {"writeBack": "src/palette"}`, `tw-dev/writeback.cjs`) : dans ce wiki de dev, ce qui est modifié dans l'UI est réécrit dans `src/palette/` puis supprimé de `wiki/tiddlers/` ; ne **pas** créer de fichier à la main dans `wiki/tiddlers/` pendant `pnpm dev`. Le wiki de dev charge aussi `theme` (`$:/theme` réel = `$:/plugins/nikorion/theme`) : `writeBack.dirs` couvre palette **et** thème, `createNew: false` (les titres inconnus des deux plugins restent dans le wiki, rien de nouveau n'est créé). Le wiki de TW-Theme route aussi les modifications de `$:/palettes/nikorion` ici (`writeBack.dirs`).
 - Exclu de la synchro des préférences (`tw-dev/prefs.json`).
 - Pas de JS, pas de `pnpm lint`.
 

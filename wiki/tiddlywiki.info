@@ -4,6 +4,7 @@
         "tiddlywiki/filesystem",
         "tiddlywiki/tiddlyweb",
         "nikorion/palette",
+        "nikorion/theme",
         "tiddlywiki/highlight",
         "tiddlywiki/katex",
         "nikorion/plugin-info-tree",
@@ -12,9 +13,7 @@
         "nikorion/font-manager",
         "nikorion/detect-language"
     ],
-    "themes": [
-        "tiddlywiki/vanilla"
-    ],
+    "themes": [],
     "languages": [
         "fr-FR"
     ],
