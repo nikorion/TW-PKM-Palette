@@ -9,6 +9,7 @@ Plugin TiddlyWiki (`$:/plugins/nikorion/palette`, créé 2026-10-11) : la palett
 - `select.tid` livre `$:/palette` : un vrai `$:/palette` dans un wiki le masque (kms-prod, wikis de dev).
 - **Write-back navigateur → source** (`"twDev": {"writeBack": "src/palette"}`, `tw-dev/writeback.cjs`) : dans ce wiki de dev, ce qui est modifié dans l'UI est réécrit dans `src/palette/` puis supprimé de `wiki/tiddlers/` ; ne **pas** créer de fichier à la main dans `wiki/tiddlers/` pendant `pnpm dev`. Le wiki de dev charge aussi `theme` (`$:/theme` réel = `$:/plugins/nikorion/theme`) : `writeBack.dirs` couvre palette **et** thème, `createNew: false` (les titres inconnus des deux plugins restent dans le wiki, rien de nouveau n'est créé). Le wiki de TW-Theme route aussi les modifications de `$:/palettes/nikorion` ici (`writeBack.dirs`).
 - Exclu de la synchro des préférences (`tw-dev/prefs.json`).
+- **Clés propres au thème** : en plus des clés de la palette Vanilla, `palette.tid` porte les couleurs de TW-Theme (`nk-site-title`, `nk-hljs-*`, `nk-info-*`, `nk-interro-*`, `nk-alert-*`, `nk-light-*`, `nk-tiddler-border`, `nk-footnote-counter`, `nk-background`) ; TW-Theme les lit par `var(--tpc-<clé>)` (variables émises par son `core-custom-properties`). Les renommer ou les retirer casse le thème.
 - Pas de JS, pas de `pnpm lint`.
 
 ## Structure
