@@ -15,7 +15,7 @@ A TiddlyWiki plugin shipping nikorion's colour palette: a copy of the default Va
 
 ## Installation
 
-Personal plugin, not published. Link `src/palette` as `nikorion/palette` in `TIDDLYWIKI_PLUGIN_PATH` and list `"nikorion/palette"` in the `plugins` of the wiki's `tiddlywiki.info`. A real `$:/palette` tiddler in the wiki would override the selection.
+Install it from the [nikorion plugin library](https://nikorion.github.io/TW-Plugin-Library/), or from the sources: link `src/palette` as `nikorion/palette` in `TIDDLYWIKI_PLUGIN_PATH` and list `"nikorion/palette"` in the `plugins` of the wiki's `tiddlywiki.info`. A real `$:/palette` tiddler in the wiki would override the selection.
 
 ## Development
 

@@ -15,7 +15,7 @@ Un plugin TiddlyWiki qui fournit la palette de couleurs de nikorion : copie de l
 
 ## Installation
 
-Plugin personnel, non publié. Reliez `src/palette` comme `nikorion/palette` dans `TIDDLYWIKI_PLUGIN_PATH` et listez `"nikorion/palette"` dans les `plugins` du `tiddlywiki.info` du wiki. Un vrai tiddler `$:/palette` dans le wiki surchargerait la sélection.
+Installez-le depuis la [bibliothèque de plugins nikorion](https://nikorion.github.io/TW-Plugin-Library/), ou depuis les sources : reliez `src/palette` comme `nikorion/palette` dans `TIDDLYWIKI_PLUGIN_PATH` et listez `"nikorion/palette"` dans les `plugins` du `tiddlywiki.info` du wiki. Un vrai tiddler `$:/palette` dans le wiki surchargerait la sélection.
 
 ## Développement
 
