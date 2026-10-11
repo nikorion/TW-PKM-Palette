@@ -2,10 +2,10 @@ title: $:/plugins/nikorion/palette/styles/properties
 tags: $:/tags/Stylesheet
 type: text/vnd.tiddlywiki
 
-\rules except dash
+\rules only html macrocallinline transcludeinline filteredtranscludeinline macrodef
 
-<!-- CSS variables for the keys of the current palette that the core does not know
-     (the core emits --tpc-<key> for the Vanilla keys only): --tpc-nk-site-title… -->
+/* CSS variables for the keys of the current palette that the core does not
+   emit (it only emits the keys of the Vanilla palette): --tpc-nk-site-title… */
 :root {
 <$list filter="[{$:/palette}indexes[]] -[[$:/palettes/Vanilla]indexes[]]" variable="key">
 	--tpc-<<key>>: <$transclude $variable="colour" $mode="inline" name=<<key>>/>;
