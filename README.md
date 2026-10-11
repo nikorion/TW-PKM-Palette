@@ -2,6 +2,8 @@
 
 **English** · [Français](README.fr.md)
 
+![Status](https://img.shields.io/badge/status-experimental-orange)
+
 A TiddlyWiki plugin shipping nikorion's colour palette: a copy of the default Vanilla palette to adjust, selected by default. Companion of TW-PKM-Theme.
 
 ## Overview
